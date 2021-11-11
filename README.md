@@ -83,3 +83,6 @@ deploy:
 6. Check out main and merge from dev and push - you should now see a build and deploy to the production app on heroku
 
 
+## Guide Article
+
+<https://codesource.io/ci-cd-with-github-travis-ci-and-heroku/>. Instead of `travis encrypt $(heroku auth:token) –add deploy.api_key –pro` we put the heroku API key in the travis dashboard for that app and reference it with `api_key: $HEROKU_API_KEY`
